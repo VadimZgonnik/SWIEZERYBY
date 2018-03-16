@@ -141,11 +141,13 @@ body {
 .secondscrin {
     width: 100%;
     min-width: 1200px;
+    height: 100vh;
     background-image: url(/img/carosel_bg.jpg);
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
     margin: 0 auto;
+    margin-bottom: 100px;
     text-align: center;
 }
 
@@ -196,6 +198,26 @@ body {
 
 .item__link-hover {
     display: none;
+    position: absolute;
+    left: 50%;
+    top: 75%;
+    transform: translate(-50%, -50%);
+    font-size: 14px;
+    color: rgb(0, 161, 235);
+    font-weight: bold;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: white;
+    padding: 15px;
+}
+
+.item__link-hover:hover {
+    color: rgb(0, 161, 235);
+    text-decoration: none;
+}
+
+.carousel__item-hover:hover .item__link-hover {
+    display: block;
 }
 
 .secondscrin__link-hover {
@@ -216,29 +238,29 @@ body {
 }
 
 .thirtscrin {
-    margin: 0 auto;
-    margin-top: 100px;
+    /* margin: 0 auto; */
+    /* margin-top: 100px; */
     text-align: center;
 }
 
-.thirtscrin__url-hover {
+.card__url-hover {
     margin-bottom: 35px;
 }
 
-.thirtscrin__url-hover:hover {}
+.card__url-hover:hover {}
 
-.thirtscrin__title {
+.card__title {
     font-size: 24px;
     font-weight: bold;
     color: rgb(0, 161, 235);
 }
 
-.thirtscrin__line {
+.card__line {
     width: 80px;
     margin: 25px auto;
 }
 
-.thirtscrin__text {
+.card__text {
     font-size: 14px;
     font-weight: normal;
     color: rgb(115, 115, 115);
